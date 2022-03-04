@@ -11,7 +11,7 @@
 
 <body>
   <nav>
-<h1>The Akan Name Generator!</h1>
+    <h1>The Akan Name Generator!</h1>
   </nav>
   <p> With this application,you will enter your birthday (day of the month,month and year) and your gender then it will
     calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
@@ -40,17 +40,31 @@
     <li>Saturday: Ama</li>
   </ol>
   <form action="submission">
-    <h1>Kow your AKAN name</h1>
-    <label for="birthday">Enter your Birthday</label>
+    <h1>Know your AKAN name</h1>
+    <label for="year-of-birth">
+      Year:
+      <input type="number" id="year-input" name="year-of-birth" placeholder="YYYY" value="" required>
+    </label>
     <br>
-    <input type="number" placeholder="day-month-year">
+    <label for="month-of-birth">
+      Month:
+      <input type="number" id="month-input" name="month-of-birth" placeholder="MM" value="" required>
+    </label>
     <br>
-    <label for="gender">Enter your gender</label>
+    <label for="day-of-birth">
+      Day:
+      <input type="number" id="day-input" name="day-of-birth" placeholder="DD" value="" required>
+    </label>
     <br>
-    <input type="text" placeholder="male or female">
-  </form>
-
-  <link rel="stylesheet" href="./js/index.js">
+<label for="gender">
+  <p>Select your gender: </p>
+  Male
+  <input type="radio" id="male-input" name="gender" value="male" required>
+  Female
+  <input type="radio" id="female-input" name="gender" value="female" required>
+  
+</label>
+    <link rel="stylesheet" href="./js/index.js">
 </body>
 
 </html>
