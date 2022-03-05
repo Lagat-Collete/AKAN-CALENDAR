@@ -15,15 +15,18 @@
     <nav>
       <h1 id="hi">The Akan Name Calander</h1>
     </nav>
-    <p class="p"> With this application,you will enter your birthday <span class="span">(day of the month,month and year)</span> and your gender then it
+    <p class="p"> With this application,you will enter your birthday <span class="span">(day of the month,month and
+        year)</span> and your gender then it
       will
       calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
       <span class="span"><strong>Akan</strong></span> names are derived from Ghanian culture. Frequently in Ghana,
-      children are given their <span class="span"><em> first name</em></span> as a 'day name' which corresponds to the day in the week they were
+      children are given their <span class="span"><em> first name</em></span> as a 'day name' which corresponds to the
+      day in the week they were
       born.
       Here are Ghanian day names.</p>
-    <div class="row">
-      <div class="col-md-4">
+
+    <div class="row justify-content-m-center">
+      <div class="col col-lg-2">
         <h2>Male</h2>
         <ol>
           <li>Sunday: Kwasi</li>
@@ -35,10 +38,10 @@
           <li>Saturday: Kwame</li>
         </ol>
       </div>
-      <div class="col-md-4">
-        <img src="./images/ghana-1.png" alt="">
+      <div class="col-md-auto">
+        <img src="./images/ghana4.jpg" alt="">
       </div>
-      <div class="col-md-4">
+      <div class="col-col-lg-2">
         <h2>Female</h2>
         <ol>
           <li>Sunday: Akosua</li>
@@ -54,17 +57,19 @@
     <form action="submission" method="get">
       <h1>Know your AKAN name</h1>
       <label for="year">Date of Birth :</label>
-      <input type="number" id="year" name="year" placeholder="Year" value="" required><input type="number" id="month-input" name="month-of-birth" placeholder="Month" value="" required><input type="number" id="day" name="day" placeholder="Day" value="" required>
+      <input type="number" id="year" name="year" placeholder="Year" value="" required><input type="number"
+        id="month-input" name="month-of-birth" placeholder="Month" value="" required><input type="number" id="day"
+        name="day" placeholder="Day" value="" required>
       <span id="errY"></span><span id="errM"></span><span id="errD"></span>
       <P>Gender: </P>
-        <label for="men">Male</label>
-        <input type="radio" name="gender" value="male"><br>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" value="female"><br>
-        <span id="errG"></span><br>
-        <button id="submit" type="submit" onclick="">Submit</button>
-        <button id="clearform" type="reset">Retry</button>
-      <p  id="nameintro" class="none">Your Akan Name is</p>
+      <label for="men">Male</label>
+      <input type="radio" name="gender" value="male"><br>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="female"><br>
+      <span id="errG"></span><br>
+      <button id="submit" type="submit" onclick="">Submit</button>
+      <button id="clearform" type="reset">Retry</button>
+      <p id="nameintro" class="none">Your Akan Name is</p>
       <p id="feedback" class="none"></p>
     </form>
 
