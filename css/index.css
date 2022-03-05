@@ -1,14 +1,75 @@
 *{
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
-form {
-  line-height:30px ;
-  margin-left: 20px;
+h1{
+  margin-bottom: 10px;
+  letter-spacing: 1px;
   font-size: 18px;
+  color: #222222;
+  font-weight: 600;
+  line-height: 1.1em;
+  font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
+  'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+h2{
+  color: #333333;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 1.1em;
+  font-weight: 600px;
+  display: block;
+  font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
+  'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+.p{
+  
+    margin: 0.8em 0;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: justtify;
+    color: grey;
+    font-size: 14px;
+    font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
+    'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+.span{
+  color:#C33B4B ;
+}
+form {
+  line-height:28px ;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+ol{
+  text-decoration: none5;
+}
+ol>li{
+font-style: italic;
 }
 form>input{
-  width: 200px;
-  height: 20px;
+  width: 60px;
+  height: 25px;
 }
+.input{
+  line-height: 20px;
+}
+form>label{
+  padding-top: 12px;
+  margin-bottom: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

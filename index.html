@@ -12,66 +12,60 @@
 
 <body>
   <div class="container">
-  <nav>
-    <h1>The Akan Name Calander</h1>
-  </nav>
-  <p> With this application,you will enter your birthday (day of the month,month and year) and your gender then it will
-    calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
-    <strong>Akan</strong> names are derived from Ghanian culture. Frequently in Ghana,
-    children are given their <em> first name</em> as a 'day name' which corresponds to the day in the week they were
-    born.
-    Here are Ghanian day names.</p>
-  <div class="row">
-  <div class="col-md-6">
-    <h2>Male</h2>
-  <ol>
-    <li>Sunday: Kwasi</li>
-    <li>Monday: Kwadwo</li>
-    <li>Tuesday: Kwabena</li>
-    <li>Wednesday: Kwaku</li>
-    <li>Thursday: Yaw</li>
-    <li>Friday: Kofi</li>
-    <li>Saturday: Kwame</li>
-  </ol>
-</div>
-<div class="col-md-6">
-  <h2>Female</h2>
-  <ol>
-    <li>Sunday: Akosua</li>
-    <li>Monday: Adwoa</li>
-    <li>Tuesday: Abenaa</li>
-    <li>Wednesday: Akua</li>
-    <li>Thursday: Yaa</li>
-    <li>Friday: Afua</li>
-    <li>Saturday: Ama</li>
-  </ol>
-</div>
-</div>
-  <form action="submission" method="get">
-    <h1>Know your AKAN name</h1>
-    <label for="year">Year:</label>
-    <br>
-    <input type="number" id="year" name="year" placeholder="Year" value="" required>
-    <br>
-    <label for="month">Month:</label>
-    <br>
-    <input type="number" id="month-input" name="month-of-birth" placeholder="Month" value="" required>
-    <br>
-    <label for="day">Day:</label>
-    <br>
-    <input type="number" id="day" name="day" placeholder="Day" value="" required>
-    <br>
-    <label for="gender">Gender:</label>
-    <br>
-    <p>Male</p>
-    <input type="radio" id="male-input" name="gender" value="male" required>
-    <p>Female</p>
-    <input type="radio" id="female-input" name="gender" value="female" required>
-    <br>
-   <input type="button" onclick="findDate()" value="submit">
-  </form>
-    
-</div>
+    <nav>
+      <h1>The Akan Name Calander</h1>
+    </nav>
+    <p class="p"> With this application,you will enter your birthday <span class="span">(day of the month,month and year)</span> and your gender then it
+      will
+      calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
+      <span class="span"><strong>Akan</strong></span> names are derived from Ghanian culture. Frequently in Ghana,
+      children are given their <span class="span"><em> first name</em></span> as a 'day name' which corresponds to the day in the week they were
+      born.
+      Here are Ghanian day names.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Male</h2>
+        <ol>
+          <li>Sunday: Kwasi</li>
+          <li>Monday: Kwadwo</li>
+          <li>Tuesday: Kwabena</li>
+          <li>Wednesday: Kwaku</li>
+          <li>Thursday: Yaw</li>
+          <li>Friday: Kofi</li>
+          <li>Saturday: Kwame</li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <h2>Female</h2>
+        <ol>
+          <li>Sunday: Akosua</li>
+          <li>Monday: Adwoa</li>
+          <li>Tuesday: Abenaa</li>
+          <li>Wednesday: Akua</li>
+          <li>Thursday: Yaa</li>
+          <li>Friday: Afua</li>
+          <li>Saturday: Ama</li>
+        </ol>
+      </div>
+    </div>
+    <form action="submission" method="get">
+      <h1>Know your AKAN name</h1>
+      <label for="year">Date of Birth :</label>
+      <input type="number" id="year" name="year" placeholder="Year" value="" required><input type="number" id="month-input" name="month-of-birth" placeholder="Month" value="" required><input type="number" id="day" name="day" placeholder="Day" value="" required>
+      <span id="errY"></span><span id="errM"></span><span id="errD"></span>
+      <P>Gender: </P>
+        <label for="men">Male</label>
+        <input type="radio" name="gender" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female"><br>
+        <span id="errG"></span><br>
+        <button id="submit" type="submit" onclick="">Submit</button>
+        <button id="clearform" type="reset">Retry</button>
+      <p  id="nameintro" class="none">Your Akan Name is</p>
+      <p id="feedback" class="none"></p>
+    </form>
+
+  </div>
   <script src="./js/index.js"></script>
 </body>
 
