@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
-  <title>Akan Name Generator</title>
+  <title>Akan Name Calendar</title>
 </head>
 
 <body>
   <nav>
-    <h1>The Akan Name Generator!</h1>
+    <h1>The Akan Name Calander</h1>
   </nav>
   <p> With this application,you will enter your birthday (day of the month,month and year) and your gender then it will
     calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
@@ -39,32 +39,32 @@
     <li>Friday: Afua</li>
     <li>Saturday: Ama</li>
   </ol>
-  <form action="submission">
+  <form action="submission" method="get">
     <h1>Know your AKAN name</h1>
-    <label for="year-of-birth">
-      Year:
-      <input type="number" id="year-input" name="year-of-birth" placeholder="YYYY" value="" required>
-    </label>
+    <label for="year">Year:</label>
     <br>
-    <label for="month-of-birth">
-      Month:
-      <input type="number" id="month-input" name="month-of-birth" placeholder="MM" value="" required>
-    </label>
+    <input type="number" id="year" name="year" placeholder="Year" value="" required>
     <br>
-    <label for="day-of-birth">
-      Day:
-      <input type="number" id="day-input" name="day-of-birth" placeholder="DD" value="" required>
-    </label>
+    <label for="month">Month:</label>
     <br>
-<label for="gender">
-  <p>Select your gender: </p>
-  Male
-  <input type="radio" id="male-input" name="gender" value="male" required>
-  Female
-  <input type="radio" id="female-input" name="gender" value="female" required>
-  
-</label>
-    <link rel="stylesheet" href="./js/index.js">
+    <input type="number" id="month-input" name="month-of-birth" placeholder="Month" value="" required>
+    <br>
+    <label for="day">Day:</label>
+    <br>
+    <input type="number" id="day" name="day" placeholder="Day" value="" required>
+    <br>
+    <label for="gender">Gender:</label>
+    <br>
+    <p>Male</p>
+    <input type="radio" id="male-input" name="gender" value="male" required>
+    <p>Female</p>
+    <input type="radio" id="female-input" name="gender" value="female" required>
+    <br>
+   <input type="button" onclick="findDate()" value="submit">
+  </form>
+    
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
