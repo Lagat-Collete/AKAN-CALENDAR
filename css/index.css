@@ -46,7 +46,7 @@ h2{
   color:#C33B4B ;
 }
 img{
-  width: 400px;
+  width: 380px;
 }
 .form {
   align-items: center;
@@ -79,10 +79,10 @@ label{
   line-height: 10px;
 }
 .img{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-left: 10px;
   
 }
 #submit{
@@ -95,9 +95,34 @@ footer{
 }
 .footer{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
+
 
 }
+.foot2{
+  margin-top: 1.5px;
+}
+
+.copy{
+
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:480px){
   footer{
   flex-direction: column;
