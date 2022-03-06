@@ -55,22 +55,22 @@
       </div>
     </div>
     <form action="submission" method="get">
-      <h1>Know your AKAN name</h1>
+      <h1>Know your AKAN name!</h1>
       <label for="year">Date of Birth :</label>
       <input type="number" id="year" name="year" placeholder="Year" value="" required><input type="number"
         id="month-input" name="month-of-birth" placeholder="Month" value="" required><input type="number" id="day"
         name="day" placeholder="Day" value="" required>
-      <span id="errY"></span><span id="errM"></span><span id="errD"></span>
-      <P>Gender: </P>
+      <span id="errYear"></span><br><span id="errMonth"></span><br><span id="errDay"></span>
+      <P>Gender: <br>
       <label for="men">Male</label>
       <input type="radio" name="gender" value="male"><br>
       <label for="female">Female</label>
       <input type="radio" name="gender" value="female"><br>
-      <span id="errG"></span><br>
+      <span id="errGender"></span><br>
       <button id="submit" type="submit" onclick="">Submit</button>
-      <button id="clearform" type="reset">Retry</button>
-      <p id="nameintro" class="none">Your Akan Name is</p>
-      <p id="feedback" class="none"></p>
+      <button id="clearform" type="reset">Retry</button></P>
+      <p id="name" >Your Akan Name is</p>
+      <p id="feedback" ></p>
     </form>
 
   </div>
