@@ -78,6 +78,31 @@ label{
   width: 16px;
   line-height: 10px;
 }
+.img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+  
+}
+#submit{
+  background-color: #ABE1FC;
+}
+footer{
+  background-color:#ABE1FC;
+ padding: 20px;
+ 
+}
+.footer{
+display: flex;
+justify-content: space-around;
+
+}
+@media screen and (max-width:480px){
+  footer{
+  flex-direction: column;
+  }
+}
 
 
 
