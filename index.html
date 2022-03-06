@@ -54,11 +54,11 @@
         </ol>
       </div>
     </div>
-    <form action="submission" method="get">
+    <form >
       <h1>Know your AKAN name!</h1>
       <label for="year">Date of Birth :</label>
       <input type="number" id="year" name="year" placeholder="Year" value="" required><input type="number"
-        id="month-input" name="month-of-birth" placeholder="Month" value="" required><input type="number" id="day"
+        id="month" name="month-of-birth" placeholder="Month" value="" required><input type="number" id="day"
         name="day" placeholder="Day" value="" required>
       <span id="errYear"></span><br><span id="errMonth"></span><br><span id="errDay"></span>
       <P>Gender: <br>
@@ -69,8 +69,8 @@
       <span id="errGender"></span><br>
       <button id="submit" type="submit" onclick="">Submit</button>
       <button id="clearform" type="reset">Retry</button></P>
-      <p id="name" >Your Akan Name is</p>
-      <p id="feedback" ></p>
+      <p id="name" class="none">Your Akan Name is</p>
+      <p id="feedback" class="none"></p>
     </form>
 
   </div>
