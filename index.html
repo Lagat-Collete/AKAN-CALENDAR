@@ -12,6 +12,9 @@
 
 <body>
   <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
     <nav>
       <h1 id="hi">The Akan Name Calander</h1>
     </nav>
@@ -54,7 +57,9 @@
         </ol>
       </div>
     </div>
-    <form >
+      <div class="form">
+        <div>
+      </div>
       <h1>Know your AKAN name!</h1>
       <label for="year">Date of Birth :</label>
       <input type="number" id="year" name="year" placeholder="Year" value="" required><input type="number"
@@ -63,15 +68,25 @@
       <span id="errYear"></span><br><span id="errMonth"></span><br><span id="errDay"></span>
       <P>Gender: <br>
       <label for="men">Male</label>
-      <input type="radio" name="gender" value="male"><br>
+      <input class="gend" type="radio" name="gender" value="male"><br>
       <label for="female">Female</label>
-      <input type="radio" name="gender" value="female"><br>
+      <input class="gend" type="radio" name="gender" value="female"><br>
       <span id="errGender"></span><br>
       <button id="submit" type="submit" onclick="">Submit</button>
       <button id="clearform" type="reset">Retry</button></P>
-      <p id="name" class="none">Your Akan Name is</p>
+      <p id="name" class="none">Your Akan Name is:</p>
       <p id="feedback" class="none"></p>
-    </form>
+      </div>
+      </div>
+      <footer>
+        <p>For more inquiries or any information ,you can follow me on:</p>
+        <img src="./images/fb.jpeg" alt="fb image">
+        <img src="./images/tw.png" alt="twitter image">
+        <img src="./images/wt.png" alt="whatsapp image">
+      </footer>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
 
   </div>
   <script src="./js/index.js"></script>

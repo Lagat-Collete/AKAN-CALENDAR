@@ -3,7 +3,12 @@
   margin: auto;
   padding: 0;
 }
+nav{
+  background-color: #C33B4B;
+  height: 100px;
+}
 h1{
+
   text-align: center;
   margin-bottom: 10px;
   letter-spacing: 1px;
@@ -14,6 +19,7 @@ h1{
   font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
   'Helvetica-Neue', Helvetica, Arial, sans-serif;
 }
+
 h2{
   color: #333333;
   letter-spacing: 1px;
@@ -42,29 +48,35 @@ h2{
 img{
   width: 400px;
 }
-form {
-  align-items: inherit;
-  line-height:28px ;
-  margin-left: 20px;
-  font-size: 15px;
+.form {
+  align-items: center;
+  margin-left: 200px;
 }
 
-ol{
-  text-decoration: none5;
-}
 ol>li{
 font-style: italic;
+list-style: none;
 }
-form>input{
+input{
   width: 60px;
-  height: 25px;
+  height: 27px;
+  border-radius: 5px;
 }
+
 .input{
   line-height: 20px;
 }
-form>label{
-  padding-top: 12px;
+label{
+  padding-top: 6px;
   margin-bottom: 1px;
+}
+#feedback{
+  color: #CD3E4B;
+}
+.gend{
+  margin-top: -10px;
+  width: 16px;
+  line-height: 10px;
 }
 
 

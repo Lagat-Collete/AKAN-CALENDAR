@@ -75,9 +75,9 @@ function dayOfTheWeek(){
 document.getElementById("submit").addEventListener("click",akanNames)
 function akanNames(){
   console.log("akanName")
-  
+
   let gender = document.querySelector('input[name="gender"]:checked')?.value
-  let day = dayOfWeek()
+  let day = dayOfTheWeek();
   let message =document.getElementById("feedback")
   message.innerHTML = ""
   console.log(gender)
@@ -104,7 +104,7 @@ function akanNames(){
     return
   }
   else{
-    const errMessage = document.getElementById(errGender)
+    const errMessage = document.getElementById("errGender")
     errMessage.innerHTML = "";
   }
   if(gender == 'female'){
