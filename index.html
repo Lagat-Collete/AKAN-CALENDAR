@@ -61,27 +61,28 @@
         <div class="form">
           <div>
           </div>
-          <h1 class="h1">Know your AKAN name!</h1>
+          <h3>Know your AKAN name!</h3>
           <label for="year">Date of Birth :</label>
-          <br>
+          
           <input type="number" id="year" name="year" placeholder="Year" value="" required>
           <span id="errYear"></span>
-          <br>
+          
           <input type="number" id="month" name="month-of-birth" placeholder="Month" value="" required>
           <span id="errMonth"></span>
-          <br>
+          
           <input type="number" id="day" name="day" placeholder="Day" value="" required>
           <span id="errDay"></span>
-          <P class="gender">Gender: <br>
+          <P class="gender">Gender: <br></P>
             <label for="men">Male</label>
             <br>
-            <input class="gend" type="radio" name="gender" value="male"><br>
-            <label for="female">Female</label>
+            <input class="gend" type="radio" name="gender" value="male">
             <br>
+            <label for="female">Female</label>
+          <br>
             <input class="gend" type="radio" name="gender" value="female"><br>
             <span id="errGender"></span><br>
             <button id="submit" type="submit" onclick="">Submit</button>
-            <button id="clearform" type="reset">Retry</button></P>
+            <button id="clearform" type="reset">Retry</button>
           <p id="name" class="none">Your Akan Name is:</p>
           <p id="feedback" class="none"></p>
         </div>
