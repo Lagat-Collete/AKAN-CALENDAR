@@ -1,5 +1,6 @@
-# AKAN NAME CALENDAR
-#### This application is for generating the AKAN names,05/03/20222
+## AKAN NAME CALENDAR
+#### This application is for generating the AKAN names
+#### latest version-05/03/20222
 #### By **Jepng'etich Lagat**
 ## Tables of Content
 1. [Description](Description)
