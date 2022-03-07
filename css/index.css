@@ -45,7 +45,7 @@ h2{
     word-spacing: 2px;
     line-height: 20px;
     text-align: justtify;
-    color: grey;
+    color: rgb(80, 79, 79);
     font-size: 14px;
     font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
     'Helvetica-Neue', Helvetica, Arial, sans-serif;
@@ -56,6 +56,9 @@ h2{
 img{
   width: 400px;
   height: 220px;
+}
+.class{
+  margin-left: 100px;
 }
 .form {
   align-items: center;
@@ -109,6 +112,10 @@ label{
   color: rgb(97, 110, 187);
   font-size: 12px;
 }
+.h4{
+  color: #CD4D88;
+  font-style:oblique;
+}
 .gend{
   margin-bottom: 2px;
   width: 16px;
@@ -117,8 +124,8 @@ label{
 .gender{
   margin-bottom: 2px;
   font-size: 27px;
-  font-weight: 700;
-  font-style:unset ;
+  font-weight: 500;
+  font-style:normal ;
 }
 .img{
   width: 40px;
@@ -174,7 +181,7 @@ font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue',
   color: red;
 }
 .container{
-  background-color: beige;
+  background-color: #ceecfc;
 }
 
 
@@ -192,7 +199,7 @@ font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue',
 
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:580px){
   footer{
   flex-direction: column;
   justify-content: center;

@@ -9,10 +9,10 @@ const message = document.getElementById("errDay");
       message.innerHTML = "";
 let day = document.getElementById("day").value;
 try {
-  if(day== "") throw "empty";
+  if(day== "") alert("empty date");
   day = Number(day);
-  if(day > 31) throw "Invalid date";
-  if(day <= 0) throw "Invalid date";
+  if(day > 31) alert ("Invalid date");
+  if(day <= 0) alert( "Invalid date");
   // if(day >= 1 && day <=29 && month=== 2 && (year = year%4) && (year != 100%4) && (year = year %400)) throw "valid date";
 
 }
@@ -29,10 +29,10 @@ function validateMonth () {
         message.innerHTML = "";
         let month = document.getElementById("month").value;
         try {
-          if(month == "") throw "empty";
+          if(month == "") alert("empty month");
           month = Number(month);
-          if(month <= 0) throw "Invalid month";
-          if(month >12) throw "Invalid month";
+          if(month <= 0) alert("Invalid month");
+          if(month >12) alert("Invalid month");
 
         } catch(err) {
           message.innerHTML = "Month is" + err;
@@ -47,10 +47,10 @@ function validateYear() {
         message.innerHTML = "";
         let year = document.getElementById("year").value;
         try {
-          if(year == "") throw "empty";
+          if(year == "") alert("empty year");
           year = Number(year);
-          if(year < 1800) throw "Invalid year";
-          if(month > 2022) throw "Invalid year";
+          if(year < 1800) alert("Invalid year");
+          if(month > 2022) alert("Invalid year");
 
         } catch(err) {
           message.innerHTML = "Year is" + err;

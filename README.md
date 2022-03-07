@@ -20,7 +20,7 @@
 - CSS
 - JS
 ## Support and contact details
-#### Feel free to call me or email me with respective contacts detail:
+#### For contributions,ideas,clarification,concerns to the code,feel free to call me or email me with respective contacts details:
 * 0705136063
 * jepngetich.lagat@student.moringascholl.com
 ### LICENSE
