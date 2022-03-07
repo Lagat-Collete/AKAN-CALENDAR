@@ -1,16 +1,21 @@
 *{
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
+body{
+  /* background-color: hsl(192, 54%, 49%); */
+}
+ 
 nav{
-  background-color: #C33B4B;
+  background-color: #a7434f;
   height: 100px;
+  padding-top: 10px;
 }
 h1{
-
+  margin-top: 10px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 20px;
   letter-spacing: 1px;
   font-size: 18px;
   color: #222222;
@@ -30,6 +35,11 @@ h2{
   display: block;
   font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
   'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+.h1{
+  color: #222222;
+  align-items: center;
+
 }
 .p{
   
@@ -58,26 +68,38 @@ font-style: italic;
 list-style: none;
 }
 input{
-  width: 60px;
-  height: 27px;
+  width: 100px;
+  height: 30px;
   border-radius: 5px;
+  
 }
 
 .input{
   line-height: 20px;
 }
 label{
+  color: blue;
   padding-top: 6px;
-  margin-bottom: 1px;
+  font-size: large;
 }
 #feedback{
   color: #CD3E4B;
 }
-.gend{
-  margin-top: -10px;
-  width: 16px;
-  line-height: 10px;
+#errYear,#errMonth,#errDay{
+  color: red;
 }
+#year,#month,#day{
+  margin: 10px;
+}
+.gend{
+  width: 16px;
+  line-height: 5px;
+}
+/* .gender{
+  font-size: 27px;
+  font-weight: 700;
+  font-style: oblique;
+} */
 .img{
   width: 40px;
   height: 40px;
@@ -86,7 +108,15 @@ label{
   
 }
 #submit{
-  background-color: #ABE1FC;
+  background-color: rgb(233, 230, 230);
+  color: #CD3E4B;
+  width: 80px;
+  height: 30px;
+}
+#clearform{
+  width: 80px;
+  color: blue;
+  height: 30px;
 }
 footer{
   background-color:#ABE1FC;
@@ -96,16 +126,30 @@ footer{
 .footer{
 display: flex;
 justify-content: space-between;
-
-
+width:100%
+}
+.footer p{margin: 0.8em 0;
+word-spacing: 2px;
+line-height: 20px;
+text-align: justtify;
+color: rgb(39, 7, 7);
+font-size: 13px;
+font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue', 
+'Helvetica-Neue', Helvetica, Arial, sans-serif;
 }
 .foot2{
-  margin-top: 1.5px;
+  margin-top: 5px;
+}
+.foot{
+  margin-top: 5px;
 }
 
-.copy{
+#copy{
 
   color: red;
+}
+.container{
+  background-color: beige;
 }
 
 
