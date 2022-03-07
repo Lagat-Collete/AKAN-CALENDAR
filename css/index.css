@@ -5,11 +5,12 @@
 }
 
  nav{
-  background-color: #a7434f;
+  background-color: #CB4E88;
   padding-top: 10px;
   height: 100px;
 }
 h1{
+  font-style: oblique;
   margin-top: 10px;
   text-align: center;
   margin-top: 20px;
@@ -23,7 +24,7 @@ h1{
 }
 
 h2{
-  color: #333333;
+  color: #774B88;
   letter-spacing: 1px;
   font-size: 15px;
   margin-bottom: 10px;
@@ -53,11 +54,12 @@ h2{
   color:#C33B4B ;
 }
 img{
-  width: 380px;
+  width: 400px;
+  height: 220px;
 }
 .form {
   align-items: center;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 ol>li{
@@ -72,7 +74,7 @@ input{
 }
 
 .input{
-  line-height: 20px;
+  line-height: 10px;
 }
 label{
   color: blue;
@@ -80,15 +82,32 @@ label{
   font-size: large;
 }
 #feedback{
-  color: #CD3E4B;
-  font-size: 18px;
+  color: white;
+  font-size: 24px;
   font-weight: bold;
+  width: 160px;
+  height: 50px;
+  padding-left: 20px;
+  border-radius: 50%;
+  
+  background-image: linear-gradient(to right, #014688 ,#D54E88) ;
 }
 #errYear,#errMonth,#errDay{
   color: red;
 }
-#year,#month,#day{
-  margin: 3px;
+
+#day{
+  width: 36px;
+}
+#month{
+  width: 39px;
+}
+#year{
+  width: 60px;
+}
+::placeholder{
+  color: rgb(97, 110, 187);
+  font-size: 12px;
 }
 .gend{
   margin-bottom: 2px;
@@ -99,7 +118,7 @@ label{
   margin-bottom: 2px;
   font-size: 27px;
   font-weight: 700;
-  font-style: oblique;
+  font-style:unset ;
 }
 .img{
   width: 40px;
@@ -147,11 +166,12 @@ font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue',
 
 #copy{
 
-  color: red;
+  color: #4385F4;
 }
 .none{
   font-size: 18px;
   padding-top: 10px;
+  color: red;
 }
 .container{
   background-color: beige;
@@ -175,7 +195,9 @@ font-family: 'open sans condensed', 'HelveticaNeue', 'Helvetica Neue',
 @media screen and (max-width:480px){
   footer{
   flex-direction: column;
+  justify-content: center;
   }
+  
 }
 
 

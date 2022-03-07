@@ -29,8 +29,8 @@
           born.
           Here are Ghanian day names.</p>
 
-        <div class="row justify-content-m-center">
-          <div class="col col-lg-2">
+        <div class="row">
+          <div class="col-md -3">
             <h2>Male</h2>
             <ol>
               <li>Sunday: Kwasi</li>
@@ -42,10 +42,10 @@
               <li>Saturday: Kwame</li>
             </ol>
           </div>
-          <div class="col-md-auto">
+          <div class="col-md-6">
             <img src="./images/ghana4.jpg" alt="">
           </div>
-          <div class="col-col-lg-2">
+          <div class="col-md-3">
             <h2>Female</h2>
             <ol>
               <li>Sunday: Akosua</li>
@@ -58,33 +58,35 @@
             </ol>
           </div>
         </div>
-        <div class="form">
-          <div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="form">
+              <h3>Know your AKAN name!</h3>
+              <label for="year">Date of Birth :</label>
+              <input type="number" id="year" name="year" placeholder="YYYY" value="" required>
+
+              <span id="errYear"></span>
+              <input type="number" id="month" name="month-of-birth" placeholder="MM" value="" required>
+
+              <span id="errMonth"></span>
+              <input type="number" id="day" name="day" placeholder="DD" value="" required>
+
+              <span id="errDay"></span>
+              <P class="gender">Gender: <br></P>
+              <input class="gend" type="radio" name="gender" value="male">
+              <label for="men">Male</label>
+              <br>
+              <input class="gend" type="radio" name="gender" value="female">
+              <label for="female">Female</label>
+              <span id="errGender"></span><br>
+              <button id="submit" type="submit" onclick="">Submit</button>
+              <button id="clearform" type="reset">Retry</button>
+              <p id="name" class="none">Your Akan Name is:</p>
+              <p id="feedback" class="none"></p>
+            </div>
           </div>
-          <h3>Know your AKAN name!</h3>
-          <label for="year">Date of Birth :</label>
-          
-          <input type="number" id="year" name="year" placeholder="Year" value="" required>
-          <span id="errYear"></span>
-          
-          <input type="number" id="month" name="month-of-birth" placeholder="Month" value="" required>
-          <span id="errMonth"></span>
-          
-          <input type="number" id="day" name="day" placeholder="Day" value="" required>
-          <span id="errDay"></span>
-          <P class="gender">Gender: <br></P>
-            <label for="men">Male</label>
-            <br>
-            <input class="gend" type="radio" name="gender" value="male">
-            <br>
-            <label for="female">Female</label>
-          <br>
-            <input class="gend" type="radio" name="gender" value="female"><br>
-            <span id="errGender"></span><br>
-            <button id="submit" type="submit" onclick="">Submit</button>
-            <button id="clearform" type="reset">Retry</button>
-          <p id="name" class="none">Your Akan Name is:</p>
-          <p id="feedback" class="none"></p>
+          <div class="col-md-2"></div>
         </div>
 
         <footer>
@@ -101,7 +103,7 @@
               <a
                 href="https://hadithi.africa/the-ghanaian-tradition-of-day-names-and-everything-you-need-to-know-about-it/">Ghanian
                 Culture</a>
-              <p id="copy">&#169 March 2022</p>
+              <p id="copy">&#169 March 2022.All Rigths Reserved:colletemine.</p>
             </div>
           </div>
         </footer>
