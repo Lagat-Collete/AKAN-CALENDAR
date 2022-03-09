@@ -1,6 +1,6 @@
-let year = document.querySelector("#year").value;
-let month = document.querySelector("#month").value;
-let day = document.querySelector("#day").value;
+let year = document.querySelector("#year").value
+let month = document.querySelector("#month").value
+let day = document.querySelector("#day").value
 
 // validation of the day
 function validateDay () {
@@ -77,19 +77,19 @@ function akanNames(){
   console.log("akanName")
 
   let gender = document.querySelector('input[name="gender"]:checked')?.value
-  let day = dayOfTheWeek();
+  let day = dayOfTheWeek()
   let message =document.getElementById("feedback")
   message.innerHTML = ""
   console.log(gender)
-  if (document.querySelector("#day").value == ""){
+  if (document.querySelector("#day").value == "") {
     validateDay();
 
   }
-  if (document.querySelector("#month").value == ""){
+  if (document.querySelector("#month").value == "") {
     validateMonth();
 
   }
-  if (document.querySelector("#year").value == ""){
+  if (document.querySelector("#year").value == "") {
     validateYear();
   }
   if(gender == null) {
@@ -158,8 +158,8 @@ console.log(document.querySelectorAll('.none'))
 const ps = document.querySelectorAll('.none')
 
 for (var x = 0; x < ps.length; x++){
-  ps[x].getElementsByClassName.display = 'block'
-}
+  ps[x].style.display = 'block'
+ }
 }
 function clearForm(){
   document.querySelector("#day").value = "";
@@ -170,13 +170,13 @@ function clearForm(){
   const ps = document.querySelectorAll(".none");
 
   for (var x = 0; x < ps.length; x++) {
-    ps[x].getElementsByClassName.display = "none";
+
+    ps[x].style.display = "none";
     const radios = document.getElementsByName("gender");
     for (var i = 0; i < radios.length; i++) radios[i].checked = false;
   }
 }
 document.getElementById('clearform').addEventListener('click',clearForm)
-
 
 
 

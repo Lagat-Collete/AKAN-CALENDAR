@@ -11,26 +11,13 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
         <nav>
           <h1 id="hi">The Akan Name Calander</h1>
         </nav>
-        <p class="p"> With this application,you will enter your birthday <span class="span">(day of the month,month and
-            year)</span> and your gender then it
-          will
-          calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
-          <span class="span"><strong>Akan</strong></span> names are derived from Ghanian culture. Frequently in Ghana,
-          children are given their <span class="span"><em> first name</em></span> as a 'day name' which corresponds to
-          the
-          day in the week they were
-          born.
-          Here are Ghanian day names.</p>
-
+        <div class="container">
         <div class="row">
-          <div class="col-md -3">
+          <div class="col-md-1"></div>
+          <div id="male" class="col-md -3">
             <h2>Male</h2>
             <ol>
               <li>Sunday: Kwasi</li>
@@ -42,10 +29,21 @@
               <li>Saturday: Kwame</li>
             </ol>
           </div>
-          <div class="col-md-6">
-            <img src="./images/ghana4.jpg" alt="">
+          <div class="col-md-5">
+            <h4 class="h4">Interested knowing your Akan name!</h4>
+            <p class="p"> With this application,you will enter your birthday <span class="span">(day of the month,month and
+              year)</span> and your gender then it
+            will
+            calculates the day of the week you were born and then depending on your gender ,it will output your Akan Name.
+            <span class="span"><strong>Akan</strong></span> names are derived from Ghanian culture. Frequently in Ghana,
+            children are given their <span class="span"><em> first name</em></span> as a 'day name' which corresponds to
+            the
+            day in the week they were
+            born.
+            Here are Ghanian day names.</p>
+           
           </div>
-          <div class="col-md-3">
+          <div id="female" class="col-md-3">
             <h2>Female</h2>
             <ol>
               <li>Sunday: Akosua</li>
@@ -58,23 +56,22 @@
             </ol>
           </div>
         </div>
+        <div class="container">
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="./images/ghana4.jpg" alt="">
+          </div>
+          <div class="col-md-5">
             <div class="form">
-              <div class="h4">
-              <h4>Interested knowing your Akan name!</h4>
-              <p>Ok lets do it here...</p>
-              </div>
-              <div class="class">
               <label class="gender" for="year">Date of Birth :</label><br>
-              <input type="number" id="year" name="year" placeholder="YYYY" value="" required>
+              <input type="number" id="year" placeholder="YYYY">
 
               <span id="errYear"></span>
-              <input type="number" id="month" name="month-of-birth" placeholder="MM" value="" required>
+              <input type="number" id="month" placeholder="MM">
 
               <span id="errMonth"></span>
-              <input type="number" id="day" name="day" placeholder="DD" value="" required>
+              <input type="number" id="day" placeholder="DD">
               <span id="errDay"></span>
              <br>
               <label class="gender">Gender: </label>
@@ -87,14 +84,13 @@
               <span id="errGender"></span><br>
               <button id="submit" type="submit" onclick="">Submit</button>
               <button id="clearform" type="reset">Retry</button>
-              <p id="name" class="none">Your Akan Name is:</p>
+              <p id="name" class="none" >Your Akan Name is:</p>
               <p id="feedback" class="none"></p>
-              </div>
             </div>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-md-1"></div>
         </div>
-
+        </div>
         <footer>
           <div class="footer">
             <div class="foot">
@@ -113,12 +109,6 @@
             </div>
           </div>
         </footer>
-      </div>
-    </div>
-    <div class="col-md-1"></div>
-  </div>
-
-  </div>
   <script src="./js/index.js"></script>
 </body>
 
